@@ -8,37 +8,6 @@
  */
 
 /**
- * Holds the min and max values for random number generation.
- *
- * @typedef {Object} Parameter
- * @property {number} minValue - Minimum value for random number generation.
- * @property {number} maxValue - Maximum value for random number generation.
- */
-
-/**
- * References to DOM elements used in the application.
- *
- * @typedef {Object} Config
- * @property {NodeListOf<Element>} cardIcon - Icons displayed in the feature cards.
- * @property {NodeListOf<Element>} cardTitle - Titles displayed in the feature cards.
- * @property {NodeListOf<Element>} cardDesc - Descriptions displayed in the feature cards.
- * @property {Element} btnGenerate - Button for generating a random number.
- * @property {Element} btnOptions - Button for setting options.
- * @property {Element} outputContainer - Container for displaying the output number.
- * @property {Element} outputNumber - Element that shows the generated random number.
- * @property {Element} copyIcon - Icon indicating the clipboard status.
- * @property {Element} triviaText - Element that shows the trivia fetched about the random number.
- */
-
-/**
- * Paths to icons used for the clipboard status.
- *
- * @typedef {Object} ClipboardIcon
- * @property {string} copy - Path to the "copy" icon.
- * @property {string} check - Path to the "check" icon.
- */
-
-/**
  * Declares the parameter object, configuration object, and clipboard icon paths.
  */
 const parameter = {
@@ -55,6 +24,7 @@ const config = {
     btnOptions: document.querySelector(".options__button"),
 
     outputContainer: document.querySelector(".output__container"),
+    outputLabel: document.querySelector(".output__label"),
     outputNumber: document.querySelector(".output__number"),
     copyIcon: document.querySelector(".clipboard__label"),
     triviaText: document.querySelector(".trivia__text"),
@@ -66,17 +36,16 @@ const clipboardIcon = {
 };
 
 /**
- * Defines the main function and call the initialization and main functions.
+ * Initialize the app and set up event listeners
  */
 initialize();
 main();
 
 /**
- * Initializes the app by loading JSON data, setting up focus styles, and configuring clipboard behavior.
+ * Initializes the app by loading JSON data and configuring clipboard behavior.
  */
 function initialize() {
     loadFeaturesJSON();
-    setFocus();
     setClipboard();
 }
 
@@ -97,21 +66,6 @@ function loadFeaturesJSON() {
                 cardDesc[index].textContent = card.description;
             });
         });
-}
-
-/**
- * Sets focus and blur event listeners on the generate button to change its background color.
- */
-function setFocus() {
-    const { btnGenerate } = config;
-
-    btnGenerate.onfocus = () => {
-        btnGenerate.style.backgroundColor = "var(--emerald-700)";
-    };
-
-    btnGenerate.onblur = () => {
-        btnGenerate.style.backgroundColor = "var(--emerald-500)";
-    };
 }
 
 /**
@@ -147,14 +101,27 @@ function main() {
 /**
  * Handles the generate button click event, generates a random number, and fetches trivia for it.
  */
-function onClickGenerate() {
+async function onClickGenerate() {
+    try {
+        const fetchedNumber = fetchNumber();
+        if (fetchedNumber) {
+            const fetchedTrivia = await fetchTrivia(fetchedNumber);
+            displayResults(fetchedNumber, fetchedTrivia);
+        }
+    } catch (error) {
+        console.error("Error in onClickGenerate:", error);
+        const { triviaText } = config;
+        triviaText.textContent = "Sorry, we couldn't fetch the data.";
+    }
+}
+
+/**
+ * Generates a random number within the specified range.
+ * @returns {number} A random number between minValue and maxValue.
+ */
+function fetchNumber() {
     const { minValue, maxValue } = parameter;
-    let randomNumber = Math.floor(Math.random() * (maxValue - minValue + 1)) + minValue;
-
-    const { outputNumber } = config;
-    outputNumber.textContent = randomNumber;
-
-    fetchTrivia(randomNumber);
+    return Math.floor(Math.random() * (maxValue - minValue + 1)) + minValue;
 }
 
 /**
@@ -162,6 +129,7 @@ function onClickGenerate() {
  *
  * @async
  * @param {number} randomNumber - The number for which to fetch trivia.
+ * @returns {Promise<string>} The trivia information as a string.
  */
 async function fetchTrivia(randomNumber) {
     const { triviaText } = config;
@@ -169,21 +137,33 @@ async function fetchTrivia(randomNumber) {
     try {
         const response = await fetch(`http://numbersapi.com/${randomNumber}`);
         const data = await response.text();
-        triviaText.textContent = data;
+        return data.toString();
     } catch (error) {
         console.error("Error fetching trivia:", error);
         triviaText.textContent = "Sorry, we couldn't fetch the trivia.";
+        return "Sorry, we couldn't fetch the trivia.";
     }
+}
+
+/**
+ * Displays the generated number and its trivia on the UI.
+ * @param {number} fetchedNumber - The generated random number.
+ * @param {string} fetchedTrivia - The trivia information for the number.
+ */
+function displayResults(fetchedNumber, fetchedTrivia) {
+    const { outputLabel, outputNumber, triviaText } = config;
+
+    outputLabel.textContent = "Your generated number is:";
+    outputNumber.textContent = fetchedNumber;
+    triviaText.textContent = fetchedTrivia;
 }
 
 /**
  * Handles the options button click event, allowing users to set new min and max values for number generation.
  */
 function onClickOptions() {
-    let { minValueTemp, maxValueTemp } = parameter;
-
-    minValueTemp = parseInt(prompt("Enter minimum value (min: 1)"));
-    maxValueTemp = parseInt(prompt("Enter maximum value (max: 9999)"));
+    let minValueTemp = parseInt(prompt("Enter minimum value (min: 1)"));
+    let maxValueTemp = parseInt(prompt("Enter maximum value (max: 9999)"));
 
     minValueTemp = isNaN(minValueTemp) ? 1 : minValueTemp;
     maxValueTemp = isNaN(maxValueTemp) ? 999 : maxValueTemp;
