@@ -130,6 +130,8 @@
 
 .trivia__container {
     border-radius: 1.3125rem;
+    flex: 0 1 275%;
+    min-height: 8rem;
     background: linear-gradient(90deg, #4bbc7b 1%, #082619 1%);
 }
 
@@ -200,6 +202,8 @@
     border-radius: 3.125rem;
     background: var(--emerald-500, #28a160);
     padding: 0.87rem 5.6rem;
+
+    transition: all 0.2s ease;
 }
 
 .generate__button:hover {
