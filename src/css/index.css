@@ -207,6 +207,7 @@
 /* DEV'S NOTE */
 .dev__container {
     margin: 5rem 10rem;
+    margin-bottom: 11.25rem;
 
     display: flex;
     justify-content: space-between;

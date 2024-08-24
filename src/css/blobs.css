@@ -2,6 +2,7 @@
 
 .blob__blur1 {
     position: absolute;
+
     width: 34.8rem;
     height: 34.6rem;
     margin-top: -4.3rem;
@@ -29,7 +30,6 @@
     background: #1a814b;
     opacity: 0.88;
     filter: blur(200px);
-    backdrop-filter: blur(25px);
     z-index: -1;
 }
 
@@ -37,8 +37,9 @@
     position: absolute;
     width: 34.8rem;
     height: 34.6rem;
-    margin-top: 73.4rem;
-    margin-left: 8.5rem;
+    margin-top: 63.4rem;
+    left: 20%;
+    transform: translateX(-20%);
     /* margin-right: 46.7rem;
     margin-bottom: 33.4rem; */
 
@@ -49,18 +50,17 @@
     z-index: -1;
 }
 
-.blob__blur4 {
+/* .blob__blur4 {
     position: absolute;
     width: 34.8rem;
     height: 34.6rem;
     margin-top: 91.6rem;
     margin-left: 68.1rem;
-    /* margin-right: -13rem;
-    margin-bottom: 15.3rem; */
+
 
     background: #28a160;
     opacity: 0.65;
     filter: blur(200px);
     border-radius: 100%;
     z-index: -1;
-}
+} */
