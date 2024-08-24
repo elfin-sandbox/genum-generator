@@ -1,0 +1,119 @@
+/* FOOTER */
+.footer__container {
+    position: relative;
+    padding: 6.25rem 10rem;
+    padding-bottom: 3.5rem;
+    margin-top: 6.25rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    background: var(--emerald-950, #082619);
+}
+
+.footer__group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+.footer__system-info {
+    display: flex;
+    width: 10.5625rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+}
+
+.footer__logo {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+}
+
+.footer__developer {
+    align-self: stretch;
+
+    color: var(--emerald-400, #4bbc7b);
+    font-family: Outfit;
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 0.975rem */
+    letter-spacing: 0.01625rem;
+}
+
+.footer__array-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+}
+
+.footer__line {
+    width: 100%;
+    height: 0.0625rem;
+
+    opacity: 0.12;
+    background: var(--emerald-200);
+}
+
+.footer__text {
+    align-self: stretch;
+
+    color: var(--emerald-50);
+    text-align: center;
+
+    /* Body Text */
+    font-family: Outfit;
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 1.21875rem */
+}
+
+#tailwindLogo,
+#tailwindLogo circle,
+#tailwindLogo path {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+#tailwindLogo:hover circle {
+    stroke: var(--emerald-300);
+}
+
+#tailwindLogo:hover path {
+    fill: var(--emerald-300);
+}
+
+#githubLogo,
+#githubLogo circle,
+#githubLogo path {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+#githubLogo:hover circle {
+    stroke: var(--emerald-300);
+}
+
+#githubLogo:hover path {
+    fill: var(--emerald-300);
+}
+
+#figmaLogo,
+#figmaLogo circle,
+#figmaLogo path {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+#figmaLogo:hover circle {
+    stroke: var(--emerald-300);
+}
+
+#figmaLogo:hover path {
+    fill: var(--emerald-300);
+}
