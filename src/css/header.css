@@ -2,8 +2,8 @@
 
 .header__container {
     display: flex;
-    padding: 0 10rem;
-    padding-top: 2.06rem;
+    margin: 0 10rem;
+    margin-top: 2.06rem;
     justify-content: space-between;
     align-items: center;
 }

@@ -1,8 +1,7 @@
 /* HERO */
 
 .hero__container {
-    position: relative;
-    padding: 6.25rem 10rem;
+    margin: 6.25rem 10rem;
 
     display: flex;
     justify-content: space-between;
@@ -96,8 +95,8 @@
 
 /* GEN TYPE */
 .menu__container {
-    position: relative;
-    padding: 5rem 10rem;
+    margin: 0 10rem;
+    padding: 5rem 0;
 
     display: flex;
     flex-direction: column;
@@ -120,17 +119,15 @@
     line-height: 120%; /* 3.675rem */
 }
 
-a {
-    width: 100%;
-}
-
 .gen__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
     border-radius: 0.75rem;
     border: 1px solid var(--emerald-500, #28a160);
     background: var(--emerald-950, #082619);
     height: 11.6875rem;
-
-    display: flex;
 
     transition: all 0.3s ease;
 }
@@ -153,12 +150,12 @@ a {
 
 .gen-text__container {
     position: relative;
-    padding-top: 1.87rem;
-    padding-left: 5.56rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 2.0625rem;
+
+    flex: 0.75 1 10%;
 }
 
 .gen__title {
@@ -192,12 +189,9 @@ a {
     line-height: 150%; /* 1.21875rem */
 }
 
-.gen__arow {
-    position: absolute;
-    margin-top: calc(8.75rem);
-    margin-left: calc(66.9rem + 2.5rem);
+.gen__arrow {
+    flex: 0.05 1 10%;
 
-    flex-shrink: 0;
     fill: var(--emerald-500, #28a160);
     stroke-width: 1px;
     stroke: var(--emerald-500, #28a160);
@@ -205,13 +199,11 @@ a {
 
 /* DEV'S NOTE */
 .dev__container {
-    position: relative;
-    padding: 5rem 10rem;
+    margin: 5rem 10rem;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 13.125rem;
 }
 
 .graphic__container {
@@ -297,4 +289,8 @@ a {
     border-radius: 1.5625rem;
     background: var(--emerald-900, #10442b);
     z-index: -1;
+}
+
+.container {
+    /* border: red 1px solid; */
 }
