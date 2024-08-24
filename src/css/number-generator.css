@@ -195,14 +195,13 @@
 
 .generate__button {
     all: unset;
+    width: 16.5625rem;
+    height: 3.125rem;
+
     border-radius: 3.125rem;
     background: var(--emerald-500, #28a160);
 
-    width: 16.5625rem;
-    height: 3.125rem;
-    text-align: center;
-
-    color: var(--Colors-White, var(--emerald-50));
+    color: var(--emerald-50);
     text-align: center;
 
     /* Button Text */

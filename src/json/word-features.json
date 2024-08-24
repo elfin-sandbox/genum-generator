@@ -1,0 +1,31 @@
+{
+    "for": "Random Word Generator",
+    "contents": [
+        {
+            "id": "1",
+            "header": {
+                "icon": "./src/images/el_circle.png",
+                "title": "Instant Word Generation"
+            },
+            "description": "Generate random words on demand using our powerful API, perfect for brainstorming, creativity, or fun."
+        },
+
+        {
+            "id": "2",
+            "header": {
+                "icon": "./src/images/el_star.png",
+                "title": "Quick Word Definitions"
+            },
+            "description": "Get the first, most relevant definition for each word instantly, ensuring you know exactly what it means."
+        },
+
+        {
+            "id": "3",
+            "header": {
+                "icon": "./src/images/el_pent.png",
+                "title": "Efficient Display of Results"
+            },
+            "description": "Your generated word and its definition are displayed immediately—quick and fast!"
+        }
+    ]
+}
