@@ -1,10 +1,10 @@
 /* HERO */
 
 .hero__container {
-    margin: 6.25rem 10rem;
+    margin: 6.25rem auto;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-shrink: 0;
 }
@@ -98,7 +98,7 @@
 
 /* GEN TYPE */
 .menu__container {
-    margin: 0 10rem;
+    margin: 0 auto;
     padding: 5rem 0;
 
     display: flex;
@@ -206,7 +206,7 @@
 
 /* DEV'S NOTE */
 .dev__container {
-    margin: 5rem 10rem;
+    margin: 5rem auto;
     margin-bottom: 11.25rem;
 
     display: flex;
@@ -301,4 +301,5 @@
 
 .container {
     /* border: red 1px solid; */
+    max-width: 75rem;
 }

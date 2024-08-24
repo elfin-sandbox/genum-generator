@@ -2,7 +2,7 @@
 
 .header__container {
     display: flex;
-    margin: 0 10rem;
+    margin: 0 auto;
     margin-top: 2.06rem;
     justify-content: space-between;
     align-items: center;
