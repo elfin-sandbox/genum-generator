@@ -135,7 +135,7 @@ async function fetchTrivia(randomNumber) {
     const { triviaText } = config;
 
     try {
-        const response = await fetch(`http://numbersapi.com/${randomNumber}`);
+        const response = await fetch(`http://numbersapi.com/${randomNumber}/`);
         const data = await response.text();
         return data.toString();
     } catch (error) {
