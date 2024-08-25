@@ -1,5 +1,10 @@
 /* HERO */
 
+.container {
+    /* border: red 1px solid; */
+    max-width: 75rem;
+}
+
 .hero__container {
     margin: 6.25rem auto;
 
@@ -297,9 +302,4 @@
     border-radius: 1.5625rem;
     background: var(--emerald-900, #10442b);
     z-index: -1;
-}
-
-.container {
-    /* border: red 1px solid; */
-    max-width: 75rem;
 }
