@@ -1,13 +1,12 @@
 /* BLOBS */
 
-.blob__blur1 {
+/* .blob__blur1 {
     position: absolute;
+
     width: 34.8rem;
     height: 34.6rem;
     margin-top: -4.3rem;
     margin-left: -16rem;
-    /* margin-right: 70.9rem;
-    margin-bottom: 111rem; */
     top: -69px;
 
     background: #28a160;
@@ -22,14 +21,11 @@
     height: 34.6rem;
     margin-top: 20.3rem;
     margin-left: 75.3rem;
-    /* margin-right: -20rem;
-    margin-bottom: 86.6rem; */
     top: -69px;
 
     background: #1a814b;
     opacity: 0.88;
     filter: blur(200px);
-    backdrop-filter: blur(25px);
     z-index: -1;
 }
 
@@ -37,30 +33,77 @@
     position: absolute;
     width: 34.8rem;
     height: 34.6rem;
-    margin-top: 73.4rem;
-    margin-left: 8.5rem;
-    /* margin-right: 46.7rem;
-    margin-bottom: 33.4rem; */
+    margin-top: 63.4rem;
+    left: 20%;
+    transform: translateX(-20%);
 
     background: #28a160;
     opacity: 0.65;
     filter: blur(200px);
     border-radius: 80%;
     z-index: -1;
-}
+} */
 
-.blob__blur4 {
+.blob__blur1 {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 34.8rem;
     height: 34.6rem;
-    margin-top: 91.6rem;
-    margin-left: 68.1rem;
-    /* margin-right: -13rem;
-    margin-bottom: 15.3rem; */
+    background: #28a160;
+    opacity: 0.25;
+    filter: blur(200px);
+    z-index: -1;
+}
+
+.blob__blur2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 20rem;
+    width: 34.8rem;
+    height: 34.6rem;
+    background: #1a814b;
+    opacity: 0.25;
+    filter: blur(200px);
+    z-index: -1;
+}
+
+.blob__blur3 {
+    position: absolute;
+    left: 50%;
+    width: 34.8rem;
+    height: 34.6rem;
+    margin-top: 83.4rem;
 
     background: #28a160;
-    opacity: 0.65;
+    opacity: 0.25;
     filter: blur(200px);
-    border-radius: 100%;
+    border-radius: 80%;
+    transform: translateX(-50%);
     z-index: -1;
+}
+
+@media (max-width: 1440px) {
+    .blob__blur1,
+    .blob__blur2,
+    .blob__blur3 {
+        opacity: 35%;
+    }
+}
+
+@media (max-width: 768px) {
+    .blob__blur1,
+    .blob__blur2,
+    .blob__blur3 {
+        width: 20rem;
+        height: 20rem;
+        filter: blur(100px);
+    }
+
+    .blob__blur3 {
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
