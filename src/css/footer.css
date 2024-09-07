@@ -128,3 +128,16 @@
 #figmaLogo:hover path {
     fill: var(--emerald-300);
 }
+
+@media all and (max-width: 480px) {
+
+
+    .footer__array-logo {
+        justify-content: flex-end;
+    }
+
+    .footer__logo-conns {
+        width: 25%;
+        align-self: flex-end;
+    }
+}

@@ -160,6 +160,10 @@
         width: 20rem;
     }
 
+    .dev__container {
+        align-items: flex-start;
+    }
+
     .dev-quote__container {
         width: 15rem;
         gap: 2rem;
@@ -175,8 +179,13 @@
         font-size: 2.25rem;
     }
 
+    .graphic__container {
+        gap: 22rem;
+    }
+
     .graphic__container img {
-        height: 3.5rem;
+        justify-self: baseline;
+        height: 1.5rem;
     }
 
     .img__container {
