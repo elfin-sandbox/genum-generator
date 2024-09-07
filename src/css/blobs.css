@@ -85,25 +85,11 @@
 }
 
 @media (max-width: 1440px) {
+
     .blob__blur1,
     .blob__blur2,
     .blob__blur3 {
+        width: 100%;
         opacity: 35%;
-    }
-}
-
-@media (max-width: 768px) {
-    .blob__blur1,
-    .blob__blur2,
-    .blob__blur3 {
-        width: 20rem;
-        height: 20rem;
-        filter: blur(100px);
-    }
-
-    .blob__blur3 {
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
     }
 }
