@@ -21,7 +21,8 @@
     font-size: 3.0625rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 120%; /* 3.675rem */
+    line-height: 120%;
+    /* 3.675rem */
     letter-spacing: 0.06125rem;
 }
 
@@ -37,7 +38,8 @@
     font-size: 0.9375rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 1.40625rem */
+    line-height: 150%;
+    /* 1.40625rem */
 }
 
 .output-trivia__container {
@@ -105,7 +107,8 @@
     font-size: 7.8125rem;
     font-style: normal;
     font-weight: 800;
-    line-height: 120%; /* 9.375rem */
+    line-height: 120%;
+    /* 9.375rem */
     letter-spacing: 0.15625rem;
 }
 
@@ -161,7 +164,8 @@
     font-size: 0.9375rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 1.40625rem */
+    line-height: 150%;
+    /* 1.40625rem */
 }
 
 .button-array__container {
@@ -229,14 +233,15 @@
     font-size: 2.4375rem;
     font-style: normal;
     font-weight: 600;
-    line-height: 120%; /* 2.925rem */
+    line-height: 120%;
+    /* 2.925rem */
 }
 
 .feature-cards__container {
     margin-top: 2.75rem;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
     gap: 3.9375rem;
 
     width: 100%;
@@ -244,7 +249,7 @@
 
 .feature__card {
     width: 30%;
-    height: 24.25rem;
+    min-height: 24.25rem;
     flex-shrink: 1;
 
     border-radius: 0.6875rem;
@@ -266,11 +271,12 @@
 }
 
 .card__title {
+    width: 100%;
+    position: relative;
     padding: 0 1.81rem;
     padding-top: 1.56rem;
     color: var(--emerald-300, #6dd094);
     text-align: center;
-    height: 4.06rem;
 
     /* Title 1 */
     font-family: Outfit;
@@ -281,17 +287,21 @@
 }
 
 .card__description {
+    width: 100%;
+
     color: var(--emerald-100, #d7f4df);
     text-align: center;
     padding: 0 1.81rem;
     padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
 
     /* Body Text */
     font-family: Outfit;
     font-size: 0.9375rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 1.40625rem */
+    line-height: 150%;
+    /* 1.40625rem */
 }
 
 /* ACTION */
@@ -319,7 +329,8 @@
     font-size: 2.4375rem;
     font-style: normal;
     font-weight: 600;
-    line-height: 120%; /* 2.925rem */
+    line-height: 120%;
+    /* 2.925rem */
 }
 
 .action__title a {
@@ -342,7 +353,8 @@
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 1.375rem; /* 110% */
+    line-height: 1.375rem;
+    /* 110% */
 
     transition: all 0.2s ease;
 }
@@ -373,7 +385,8 @@
     font-size: 0.9375rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 1.40625rem */
+    line-height: 150%;
+    /* 1.40625rem */
 }
 
 .check__desc {
@@ -382,5 +395,6 @@
     font-size: 0.8125rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 1.21875rem */
+    line-height: 150%;
+    /* 1.21875rem */
 }
