@@ -1,0 +1,210 @@
+/*  Responsive Grid Media Queries - 1280, 1024, 768, 480
+*   1280-1024   - desktop (default grid)
+*   1024-768    - tablet landscape
+*   768-480     - tablet 
+*   480-less    - phone landscape & smaller */
+
+
+.container {
+    /* border: red 1px solid; */
+    max-width: 75%;
+}
+
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+    .hero__img {
+        max-width: 70%;
+        min-width: 22.5rem;
+        height: auto;
+    }
+}
+
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    .hero__img {
+        display: none;
+    }
+
+    .hero__left {
+        width: 100%;
+        align-items: center;
+    }
+
+    .hero__left h1,
+    .hero__left p {
+        text-align: center;
+    }
+
+    .hero__left__feat {
+        align-items: center;
+    }
+
+    .hero__note {
+        width: 100%;
+    }
+
+    .dev__rect {
+        width: 25rem;
+    }
+
+    .dev-quote__container {
+        width: 20rem;
+    }
+
+    .dev-quote__container p {
+        font-size: 0.8rem;
+    }
+
+    .img__container {
+        height: 99%;
+    }
+
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+
+    .landing__h2 {
+        font-size: 2.65rem;
+    }
+
+    .hero__img {
+        display: none;
+    }
+
+    .hero__left {
+        width: 100%;
+        align-items: center;
+    }
+
+    .hero__left h1,
+    .hero__left p {
+        text-align: center;
+    }
+
+    .hero__left__feat {
+        align-items: center;
+    }
+
+    .hero__note {
+        width: 100%;
+    }
+
+    .dev__rect {
+        width: 20rem;
+    }
+
+    .dev-quote__container {
+        width: 15rem;
+    }
+
+    .dev-quote__container p {
+        font-size: 0.7rem;
+    }
+
+    .graphic__container img {
+        height: 3.5rem;
+    }
+
+    .img__container {
+        display: none;
+    }
+
+    .gen__container {
+        padding: 2.5rem;
+    }
+
+    .gen__title {
+        font-size: 1.6rem;
+    }
+
+
+}
+
+@media all and (max-width: 480px) {
+
+    .header__button {
+        font-size: 0.65rem;
+        padding: 0.45rem 1.25rem;
+    }
+
+    .hero__h1 {
+        font-size: 3rem;
+    }
+
+    .landing__h2 {
+        font-size: 1.75rem;
+    }
+
+    .hero__img {
+        display: none;
+    }
+
+    .hero__left {
+        width: 100%;
+        align-items: center;
+    }
+
+    .hero__left h1,
+    .hero__left p {
+        text-align: center;
+    }
+
+    .hero__left__feat {
+        align-items: center;
+    }
+
+    .hero__note {
+        width: 100%;
+    }
+
+    .dev__rect {
+        width: 20rem;
+    }
+
+    .dev-quote__container {
+        width: 15rem;
+        gap: 2rem;
+    }
+
+    .dev__quote {
+        font-size: 0.7rem;
+        width: 85%;
+    }
+
+
+    .dev__h2 {
+        font-size: 2.25rem;
+    }
+
+    .graphic__container img {
+        height: 3.5rem;
+    }
+
+    .img__container {
+        display: none;
+    }
+
+    .gen__container {
+        padding: 2rem;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .gen-text__container {
+        width: 100%;
+    }
+
+    .gen__title {
+        font-size: 1.26rem;
+    }
+
+    .gen__body {
+        width: auto;
+        font-size: 0.65rem;
+    }
+
+    .gen__arrow {
+        align-self: flex-end;
+        margin-top: 1rem;
+        width: 1rem;
+    }
+}

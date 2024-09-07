@@ -40,7 +40,8 @@
     font-size: 3.8125rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 120%; /* 4.575rem */
+    line-height: 120%;
+    /* 4.575rem */
     letter-spacing: 0.07625rem;
 }
 
@@ -53,7 +54,8 @@
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 120%; /* 1.5rem */
+    line-height: 120%;
+    /* 1.5rem */
     letter-spacing: 0.025rem;
 }
 
@@ -71,7 +73,8 @@
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 1.375rem; /* 110% */
+    line-height: 1.375rem;
+    /* 110% */
     transition: all 0.2s ease;
 }
 
@@ -87,7 +90,8 @@
     font-size: 0.8125rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 120%; /* 0.975rem */
+    line-height: 120%;
+    /* 0.975rem */
     letter-spacing: 0.01625rem;
 }
 
@@ -100,6 +104,7 @@
     max-width: 70%;
     height: auto;
 }
+
 
 /* GEN TYPE */
 .menu__container {
@@ -198,7 +203,8 @@
     font-size: 0.9rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 1.21875rem */
+    line-height: 150%;
+    /* 1.21875rem */
 }
 
 .gen__arrow {
@@ -256,7 +262,8 @@
     font-size: 3.0625rem;
     font-style: normal;
     font-weight: 600;
-    line-height: 120%; /* 3.675rem */
+    line-height: 120%;
+    /* 3.675rem */
 }
 
 .dev-quote__container {
@@ -289,7 +296,8 @@
     font-size: 0.9rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 1.21875rem */
+    line-height: 150%;
+    /* 1.21875rem */
 }
 
 .dev__rect {
