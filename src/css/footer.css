@@ -140,4 +140,12 @@
         width: 25%;
         align-self: flex-end;
     }
+
+    .footer__logo h1 {
+        font-size: 1.75rem;
+    }
+
+    .footer__text {
+        font-size: 0.675rem;
+    }
 }
