@@ -1,0 +1,180 @@
+/*  Responsive Grid Media Queries - 1280, 1024, 768, 480
+*   1280-1024   - desktop (default grid)
+*   1024-768    - tablet landscape
+*   768-480     - tablet 
+*   480-less    - phone landscape & smaller */
+
+.container {
+    /* border: red 1px solid; */
+    max-width: 75%;
+}
+
+@media all and (min-width: 1024px) and (max-width: 1280px) {}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+
+    /*// ACTION */
+    .action__group {
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    .action__group {
+        order: 2;
+    }
+
+    .action__title {
+        text-align: center;
+    }
+
+    .check__group {
+        width: 100%;
+        order: 1;
+        justify-content: space-evenly;
+        margin-bottom: 1.5rem;
+    }
+
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+
+    /*// GENERATOR */
+    .output-trivia__container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .output__container {
+        width: 100%;
+    }
+
+    .output__group {
+        gap: 0.5rem;
+    }
+
+    .output__label {
+        width: 100%;
+    }
+
+    .output__number {
+        font-size: 7.5rem;
+    }
+
+    .trivia__container {
+        width: 100%;
+    }
+
+    /*// FEATURE CARDS */
+    .feature-cards__container {
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    .feature__card {
+        width: 100%;
+    }
+
+    .card__title {
+        font-size: 2.5rem;
+    }
+
+    .card__description {
+        font-size: 1.25rem;
+    }
+
+    /*// ACTION */
+    .action__group {
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    .action__group {
+        order: 2;
+    }
+
+    .action__title {
+        text-align: center;
+    }
+
+    .check__group {
+        width: 100%;
+        order: 1;
+        justify-content: space-evenly;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media all and (max-width: 480px) {
+
+    /*// GENERATOR */
+    .output-trivia__container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .output__container {
+        width: 100%;
+    }
+
+    .output__group {
+        gap: 0.5rem;
+    }
+
+    .output__label {
+        width: 100%;
+    }
+
+    .output__number {
+        font-size: 7.5rem;
+    }
+
+    .trivia__container {
+        width: 100%;
+    }
+
+    /*// FEATURE CARDS */
+    .feature-cards__container {
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    .feature__card {
+        width: 100%;
+    }
+
+    .card__title {
+        font-size: 2rem;
+    }
+
+    .card__description {
+        font-size: 1rem;
+    }
+
+    /*// ACTION */
+    .action__group {
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    .action__group {
+        max-width: 100%;
+        order: 2;
+    }
+
+    .action__title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .action__button {
+        font-size: 1rem;
+    }
+
+    .check__group {
+        flex-direction: column;
+        width: 100%;
+        order: 1;
+        justify-content: space-evenly;
+        margin-bottom: 1.5rem;
+    }
+}

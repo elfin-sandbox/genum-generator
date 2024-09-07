@@ -121,11 +121,6 @@
 
 @media all and (max-width: 480px) {
 
-    .header__button {
-        font-size: 0.65rem;
-        padding: 0.45rem 1.25rem;
-    }
-
     .hero__h1 {
         font-size: 3rem;
     }

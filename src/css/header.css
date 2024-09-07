@@ -46,7 +46,8 @@
     font-size: 1rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 1.375rem; /* 137.5% */
+    line-height: 1.375rem;
+    /* 137.5% */
 
     padding: 0.56rem 2.38rem;
 
@@ -58,4 +59,16 @@
 .header__button:hover {
     background: var(--emerald-600);
     color: var(--emerald-50);
+}
+
+@media all and (max-width: 480px) {
+
+    .header__button {
+        font-size: 0.65rem;
+        padding: 0.45rem 1.25rem;
+    }
+
+    .action__button {
+        width: 15rem;
+    }
 }

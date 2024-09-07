@@ -5,7 +5,7 @@
             "id": "1",
             "header": {
                 "icon": "./src/images/el_circle.png",
-                "title": "Effortless Random Number Generation"
+                "title": "Effortless Number Generation"
             },
             "description": "Generate random numbers instantly, from single digits to custom ranges, with just a few clicks."
         },
